@@ -5,9 +5,6 @@ services:
   runtime: image
   image:
     url: docker.io/surarohith/forex-explorer:latest
-  envVars:
-    - key: PORT
-      value: 9092
   plan: free
   region: oregon
 version: "1"
