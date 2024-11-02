@@ -1,0 +1,10 @@
+# Exported from Render on 2024-11-02T18:39:44Z
+services:
+- type: web
+  name: backend-parent
+  runtime: image
+  image:
+    url: docker.io/surarohith/backend-parent:latest
+  plan: free
+  region: oregon
+version: "1"
