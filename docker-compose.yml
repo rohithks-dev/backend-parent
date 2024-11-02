@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  forex-explorer:
+    image: docker.io/surarohith/forex-explorer:latest
+    container_name: forex-explorer
+    networks:
+      - forex-explorer-network
+    ports:
+      - "8085:80"
+    labels:
+      org.springframework.boot.readiness-check.tcp.disable: "true"
+
+  #score-evaluation:
+    #image: docker.io/surarohith/score_evaluation:latest
+    #ports:
+    #  - "8082:8080"
+
+  # Add more services as needed, referencing Docker Hub images for each one
+
+networks:
+  forex-explorer-network:
+    driver: bridge
