@@ -5,6 +5,9 @@ services:
   runtime: image
   image:
     url: docker.io/surarohith/backend-parent:latest
+  envVars:
+    - key: PORT
+      value: 8001
   plan: free
   region: oregon
 version: "1"
