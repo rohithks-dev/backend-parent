@@ -4,10 +4,10 @@ services:
   name: backend-parent
   runtime: image
   image:
-    url: docker.io/surarohith/backend-parent:latest
+    url: docker.io/surarohith/forex-explorer:latest
   envVars:
     - key: PORT
-      value: 8080
+      value: 9092
   plan: free
   region: oregon
 version: "1"
