@@ -7,4 +7,7 @@ services:
       url: docker.io/surarohith/forex-explorer:latest
     plan: free
     region: oregon
+    envVars:
+      - key: PORT
+        value: 8080
 version: "1"
