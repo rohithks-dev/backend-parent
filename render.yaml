@@ -7,4 +7,19 @@ services:
     url: docker.io/surarohith/forex-explorer:latest
   plan: free
   region: oregon
+
+- type: web
+  name: score-evaluation
+  runtime: image
+  image:
+    url: docker.io/surarohith/score_evaluation:latest
+  plan: free
+  region: oregon
+  envVars:
+    - key: SCORE_EVALUATION_DB_USERNAME
+      sync: false
+    - key: SCORE_EVALUATION_DB_URL
+      sync: false
+    - key: SCORE_EVALUATION_DB_PASSWORD
+      sync: false
 version: "1"
