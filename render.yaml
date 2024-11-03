@@ -1,17 +1,10 @@
 # Exported from Render on 2024-11-02T18:39:44Z
 services:
-- type: web
-  name: score-evaluation
-  runtime: image
-  image:
-    url: docker.io/surarohith/score_evaluation:latest
-  plan: free
-  region: oregon
-  envVars:
-    - key: SCORE_EVALUATION_DB_USERNAME
-      sync: false
-    - key: SCORE_EVALUATION_DB_URL
-      sync: false
-    - key: SCORE_EVALUATION_DB_PASSWORD
-      sync: false
+  - type: web
+    name: forex-explorer
+    runtime: image
+    image:
+      url: docker.io/surarohith/forex-explorer:latest
+    plan: free
+    region: oregon
 version: "1"
